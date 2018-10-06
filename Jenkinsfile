@@ -5,12 +5,12 @@ pipeline {
       parallel {
         stage('error') {
           steps {
-            sh 'date'
+            sh 'touch yele.php'
           }
         }
         stage('test') {
           steps {
-            sh 'date'
+            sh 'ls -al'
           }
         }
       }
