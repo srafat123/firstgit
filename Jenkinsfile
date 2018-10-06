@@ -5,12 +5,12 @@ pipeline {
       parallel {
         stage('error') {
           steps {
-            sh 'ls -al'
+            sh 'date'
           }
         }
         stage('test') {
           steps {
-            sh 'echo sherjeel jenkins'
+            sh 'date'
           }
         }
       }
